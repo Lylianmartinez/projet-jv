@@ -1,5 +1,5 @@
 "use strict"
-// 10 Variables liées au jeu God of War: Ragnarok
+
 let kratosLevel = 50;
 let kratosHealth = 100;
 let kratosRageMeter = 75;
@@ -15,7 +15,6 @@ let puzzlesSolved = 8;
 
 let playerGold = 500;
 
-// 2 Classes liées au jeu
 class Character {
   constructor(name, level, health, rageMeter, strength) {
     this.name = name;
@@ -50,7 +49,6 @@ class Weapon {
   }
 }
 
-// 2 Fonctions liées au jeu
 function exploreLocation(location) {
   console.log(`Exploring ${location}...`);
   console.log(`Found ${enemyCount} enemies and ${puzzlesSolved} solved puzzles.`);
@@ -61,11 +59,9 @@ function earnGold(amount) {
   console.log(`Earned ${amount} gold. Total gold: ${playerGold}`);
 }
 
-// 2 messages sur la console
 console.log("Welcome to God of War: Ragnarok!");
 console.log("Get ready for an epic journey!");
 
-// Utilisation des classes et fonctions
 let kratos = new Character("Kratos", kratosLevel, kratosHealth, kratosRageMeter, kratosStrength);
 let leviathanAxe = new Weapon("Leviathan Axe", leviathanAxeLevel, leviathanAxeDamage, leviathanAxeMagic);
 
